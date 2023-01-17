@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Victor Crudu](https://up.htmlacademy.ru/htmlcss/36/user/2253001).
-* Наставник: `Неизвестно`.
+- Студент: [Victor Crudu](https://up.htmlacademy.ru/htmlcss/36/user/2253001).
+- Наставник: `Михаил Кислый`.
 
 ---
 
