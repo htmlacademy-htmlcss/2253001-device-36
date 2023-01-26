@@ -20,7 +20,10 @@
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <button type="button" class="login-button">Войти</button>
+            <button type="button" class="user-button">Коля Петухов</button>
+          </li>
+          <li class="navigation-item">
+            <button type="button" class="loin-button">Выйти</button>
           </li>
           <li class="navigation-item">
             <button type="button" class="compare-button">Сравнить</button>
@@ -66,7 +69,90 @@
         </ul>
       </nav>
     </header>
-    <main class="index-html"></main>
+    <main class="catalog-html">
+      <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"> Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"> Моноподы для селфи</a>
+        </li>
+      </ul>
+      <section class="product-selection">
+        <h3 class="product-filter-title">ФИЛЬТР:</h3>
+
+        <ul class="product-filter-list">
+          <li class="product-filter-item">Стоимость</li>
+          от 0
+          <input type="range" min="0" max="5000" />до 5000
+          <li class="product-filter-item">Цвет</li>
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Черный"
+              checked
+            />Черный
+          </label>
+
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Белый"
+              checked
+            />Белый
+          </label>
+          <label class="control">
+            <input class="control-input" type="checkbox" name="Синий" />Синий
+          </label>
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Красный"
+            />Красный
+          </label>
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Розовый"
+            />Розовый
+          </label>
+          <li class="product-filter-item">Bluetooth</li>
+          <label class="control">
+            <input
+              class="control-input"
+              type="radio"
+              name="Bluetooth"
+              value="have"
+              checked
+            />Есть
+          </label>
+          <label class="control">
+            <input
+              class="control-input"
+              type="radio"
+              name="Bluetooth"
+              value="not"
+            />Нет
+          </label>
+        </ul>
+        <button class="submit" type="button">ПОКАЗАТЬ</button>
+      </section>
+      <button class="sort" type="button">СОРТИРОВКА:</button>
+      <button class="select" type="button">Популярные</button>
+      <div class="product-card">
+        <img class="product-card-image" src="" alt="Любительская селфи-палка" />
+        <h3 class="product-card-title">Любительская селфи-палка</h3>
+        <b class="product-card-price" 500 ₽></b>
+      </div>
+    </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">device</h2>
       <img class="logo-footer" src="" alt="Логотип Девайс" />
