@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2253001-device-36/2/">
+</head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">device</h1>
+      <img class="logo-header" src="" alt="Логотип Девайс" />
+      <nav class="navigation">
+        <div class="search-container">
+          <img src="" alt="search" class="search-icon" />
+          <input
+            type="text"
+            placeholder="Поиск по сайту"
+            class="search-input"
+          />
+          <button type="button" class="search-button">Найти</button>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <button type="button" class="user-button">Коля Петухов</button>
+          </li>
+          <li class="navigation-item">
+            <button type="button" class="loin-button">Выйти</button>
+          </li>
+          <li class="navigation-item">
+            <button type="button" class="compare-button">Сравнить</button>
+          </li>
+          <li class="navigation-item">
+            <button type="button" class="cart-button">Корзина</button>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="naviation-item">
+            <a class="navigation-link" href="#">КАТАЛОГ ТОВАРОВ</a>
+            <button></button>
+            <ul class="sub-navigation-list visually-hidden">
+              <li class="sub-navigation-item">
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li class="sub-navigation-item">
+                <a href="#">Моноподы для cелфи</a>
+              </li>
+              <li class="sub-navigation-item">
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li class="sub-navigation-item">
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="sub-navigation-item">
+                <a href="#">Умные часы</a>
+              </li>
+              <li class="sub-navigation-item">
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">ДОСТАВКА</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">ГАРАНТИЯ</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog-html">
+      <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"> Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link"> Моноподы для селфи</a>
+        </li>
+      </ul>
+      <section class="product-selection">
+        <h3 class="product-filter-title">ФИЛЬТР:</h3>
+
+        <ul class="product-filter-list">
+          <li class="product-filter-item">Стоимость</li>
+          от 0
+          <input type="range" min="0" max="5000" />до 5000
+          <li class="product-filter-item">Цвет</li>
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Черный"
+              checked
+            />Черный
+          </label>
+
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Белый"
+              checked
+            />Белый
+          </label>
+          <label class="control">
+            <input class="control-input" type="checkbox" name="Синий" />Синий
+          </label>
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Красный"
+            />Красный
+          </label>
+          <label class="control">
+            <input
+              class="control-input"
+              type="checkbox"
+              name="Розовый"
+            />Розовый
+          </label>
+          <li class="product-filter-item">Bluetooth</li>
+          <label class="control">
+            <input
+              class="control-input"
+              type="radio"
+              name="Bluetooth"
+              value="have"
+              checked
+            />Есть
+          </label>
+           <input
+              class="control-input"
+              type="radio"
+              name="Bluetooth"
+              value="not"
+            />Нет
+          </label>
+        </ul>
+        <button class="submit" type="button">ПОКАЗАТЬ</button>
+      </section>
+      <button class="sort" type="button">СОРТИРОВКА:</button>
+      <button class="select" type="button">Популярные</button>
+      <div class="product-card">
+        <img class="product-card-image" src="" alt="Любительская селфи-палка" />
+        <h3 class="product-card-title">Любительская селфи-палка</h3>
+        <b class="product-card-price" 500 ₽></b>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">device</h2>
+      <img class="logo-footer" src="" alt="Логотип Девайс" />
+      <p class="footer-address-text">
+        Санкт-Петербург, набережная реки Карповки, 5, литера П.
+      </p>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link" href="#">ДОСТАВКА</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#">ГАРАНТИЯ</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#">КОНТАКТЫ</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+        </li>
+      </ul>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="https://t.me/htmlacademy"></a>
+          <span class="visually-hidden">Телеграм</span>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="button"
+            href="https://www.youtube.com/user/htmlacademyru"
+          ></a>
+          <span class="visually-hidden">Ютуб</span>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
+          <span class="visually-hidden">Твиттер</span>
+        </li>
+      </ul>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru">
+        <img src="" alt=".html academy" />
+      </a>
+    </footer>
+  </body>
+</html>
