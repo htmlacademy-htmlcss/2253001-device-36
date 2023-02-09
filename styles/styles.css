@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/raleway-regular.woff2") format("woff2");
+  src: url("../fonts/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/rubik-regular.woff2") format("woff2");
+  src: url("../fonts/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/rubik-bold.woff2") format("woff2");
+  src: url("../fonts/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -43,9 +43,10 @@ body {
   color: #000000;
 }
 
-ul {
+.reset-list {
 list-style-type: none;
 }
+
 .search-input::placeholder {
   font-size: 16px;
   line-height: 20px;
@@ -62,12 +63,11 @@ list-style-type: none;
 }
 
 .navigation-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
 }
 
 .gallery-info-number {
@@ -77,10 +77,9 @@ list-style-type: none;
 }
 
 .image-info {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-
 }
 
 .image-description {
@@ -88,7 +87,7 @@ list-style-type: none;
 }
 
 .more-info {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -106,24 +105,25 @@ list-style-type: none;
 .catalog-list {
   display: flex;
 }
+
 .catalog-item {
   display: flex;
   flex-direction: column;
 }
+
 .catalog-name {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
 }
 
 .info-item  {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
 }
 
 .info-item-active {
@@ -134,11 +134,10 @@ color: #ffe17f;
 .about-title,
 .contacts-title,
 .distribution-title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-
 }
 
 .description-text {
@@ -146,19 +145,19 @@ color: #ffe17f;
 }
 
 .delivery-rare-product {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
 }
 
 .about-text {
   color: #444444;
 }
+
 .about-item {
   list-style-type: disc;
   font-weight: 700;
@@ -167,7 +166,7 @@ color: #ffe17f;
 }
 
 .about-more {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   text-align: center;
@@ -190,7 +189,7 @@ color: #ffe17f;
 }
 
 .distribution-subscribe  {
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   display: flex;
@@ -206,14 +205,14 @@ color: #ffe17f;
   line-height: 20px;
   color: #ffffff;
 }
+
 .footer-link {
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase
 }
-
 
 .loin-button {
   opacity: 0.3;
@@ -221,7 +220,7 @@ color: #ffe17f;
 
 .breadcrumbs-title,
 .submit-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -235,7 +234,7 @@ color: #ffe17f;
 .product-filter-title,
 .sort-link,
 .load-more-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -269,7 +268,7 @@ color: #ffe17f;
 
 .pagination-link-back,
 .pagination-link-forward {
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   display: flex;
@@ -285,8 +284,8 @@ color: #ffe17f;
   line-height: 20px;
   color: #444444;
   opacity: 0.3;
-
 }
+
 .pagination-link-back {
   color: #444444;
 }
