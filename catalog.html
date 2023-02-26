@@ -79,10 +79,10 @@
         </div>
         <div class="header-bottom-menu">
           <div class="header-catalog-item">
-            <a class="header-catalog-link" href="catalog.html"
+            <a class="header-catalog-link link" href="catalog.html"
               >Каталог товаров</a
             >
-            <button>
+            <button class="header-sub-catalog-button">
               <img
                 src="images/plus.svg"
                 width="50"
@@ -114,13 +114,13 @@
           </div>
           <ul class="header-catalog-list reset-list">
             <li class="header-delivery-item">
-              <a class="header-delivery-link" href="#">Доставка</a>
+              <a class="header-delivery-link link" href="#">Доставка</a>
             </li>
             <li class="header-guarantee-item">
-              <a class="header-guarantee-link" href="#">Гарантия</a>
+              <a class="header-guarantee-link link" href="#">Гарантия</a>
             </li>
             <li class="header-contacts-item">
-              <a class="header-contacts-link" href="#">Контакты</a>
+              <a class="header-contacts-link link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -239,8 +239,12 @@
                   height="380"
                   alt="Любительская селфи-палка"
                 />
-                <h3 class="product-card-title">Любительская селфи-палка</h3>
-                <p class="product-card-price">500 ₽</p>
+                <div class="product-card-description">
+                  <h3 class="product-card-title">
+                    Любительская<br />селфи-палка
+                  </h3>
+                  <p class="product-card-price">500 ₽</p>
+                </div>
               </li>
               <li class="product-card">
                 <img
@@ -250,8 +254,12 @@
                   height="380"
                   alt="Профессиональная селфи-палка "
                 />
-                <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                <p class="product-card-price">1500 ₽</p>
+                <div class="product-card-description">
+                  <h3 class="product-card-title">
+                    Профессиональная<br />селфи-палка
+                  </h3>
+                  <p class="product-card-price">1500 ₽</p>
+                </div>
               </li>
               <li class="product-card">
                 <img
@@ -262,8 +270,12 @@
                   alt="Непотопляемая
             селфи-палка"
                 />
-                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                <p class="product-card-price">2500 ₽</p>
+                <div class="product-card-description">
+                  <h3 class="product-card-title">
+                    Непотопляемая<br />селфи-палка
+                  </h3>
+                  <p class="product-card-price">2500 ₽</p>
+                </div>
               </li>
               <li class="product-card">
                 <img
@@ -273,34 +285,44 @@
                   height="380"
                   alt="Селфи-палка «Следуй за мной»"
                 />
-                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-                <p class="product-card-price">1500 ₽</p>
+                <div class="product-card-description">
+                  <h3 class="product-card-title">
+                    Селфи-палка «Следуй<br />за мной»
+                  </h3>
+                  <p class="product-card-price">1500 ₽</p>
+                </div>
               </li>
             </ul>
-            <a class="load-more-link link">Загрузить ещё</a>
-            <ul class="pagination reset-list">
-              <li class="pagination-item">
-                <a class="pagination-link-back link" href="#">Назад</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link-number link" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link-number link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link-number link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link-point link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link-number link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link-forward link" href="#">Вперёд</a>
-              </li>
-            </ul>
+            <div class="catalog-more">
+              <a class="load-more-link link">Загрузить ещё</a>
+              <ul class="pagination reset-list">
+                <li class="pagination-item">
+                  <a class="pagination-link-back link" href="#">Назад</a>
+                </li>
+                <li class="pagination-item">
+                  <ul class="numbers reset-list">
+                    <li>
+                      <a class="pagination-link-number link" href="#">1</a>
+                    </li>
+                    <li>
+                      <a class="pagination-link-number link" href="#">2</a>
+                    </li>
+                    <li>
+                      <a class="pagination-link-number link" href="#">3</a>
+                    </li>
+                    <li>
+                      <a class="pagination-link-points link" href="#">...</a>
+                    </li>
+                    <li>
+                      <a class="pagination-link-number link" href="#">15</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link-forward link" href="#">Вперёд</a>
+                </li>
+              </ul>
+            </div>
           </section>
         </div>
       </div>

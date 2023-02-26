@@ -109,6 +109,23 @@ body {
 .header-search-button {
   font-size: 16px;
   line-height: 20px;
+  all: unset;
+}
+
+.header-login-button {
+  all: unset;
+}
+
+.header-compare-button {
+  all: unset;
+}
+
+.header-cart-button {
+  all: unset;
+}
+
+.header-exit-login-button {
+  all: unset;
 }
 
 .header-bottom-menu {
@@ -130,6 +147,10 @@ body {
 .header-catalog-item {
   display: flex;
   align-items: center;
+}
+
+.header-sub-catalog-button {
+  all: unset;
 }
 
 .header-sub-catalog-item {
@@ -168,6 +189,15 @@ body {
   position: absolute;
   top: 100px;
   left: 270px;
+}
+
+.indicators-list {
+  width: 76px;
+  height: 12px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: -26px;
+  margin-bottom: 70px;
 }
 
 .slider-info-number {
@@ -270,6 +300,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 280px;
+  border-right: 7px solid black;
 }
 
 .info-item {
@@ -309,7 +340,7 @@ body {
   gap: 110px;
   width: 694px;
   height: 174px;
-  border-left: 7px solid black;
+  margin-left: 116px;
 }
 
 .description-text {
@@ -342,6 +373,10 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   padding: 40px;
+}
+
+.info-icon {
+  margin-right: 40px;
 }
 
 .about-contacts {
@@ -499,6 +534,7 @@ body {
 
 .product-card-section {
   flex-grow: 1;
+  width: 100%;
 }
 
 .products-list {
@@ -508,6 +544,11 @@ body {
   gap: 40px;
   background-color: #ffffff;
   padding: 70px 40px 116px;
+}
+
+.product-card-description {
+  display: flex;
+  justify-content: space-between;
 }
 
 .breadcrumbs-title,
@@ -561,20 +602,28 @@ body {
   color: #444444;
 }
 
+.catalog-more {
+  background-color: #ffffff;
+  padding-bottom: 80px;
+}
+
 .load-more-link {
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #ffffff;
   padding: 25px;
-  margin-top: 40px;
+  border: 2px solid #f0f0f0;
+  margin: 0 40px;
+  margin-bottom: 40px;
 }
 
 .pagination {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
   justify-content: space-around;
+  padding: 20px 40px;
+  margin: 0 40px;
+  background-color: #f0f0f0;
 }
 
 .pagination-link-back,
@@ -590,11 +639,17 @@ body {
 }
 
 .pagination-link-number,
-.pagination-link-point {
+.pagination-link-points {
   font-size: 16px;
   line-height: 20px;
   color: #444444;
   opacity: 0.3;
+}
+
+.numbers {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
 }
 
 .pagination-link-back {
