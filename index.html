@@ -18,74 +18,82 @@
       <nav class="header-navigation">
         <div class="header-navigation-top">
           <div class="header-search-container">
-            <img
-              src="images/search.svg"
-              width="16"
-              height="16"
-              alt="search"
-              class="header-search-icon"
-            />
-            <label>
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input
-                type="search"
-                name="text"
-                class="header-search-input"
-                placeholder="Поиск по сайту"
+            <div class="header-input">
+              <img
+                src="images/search.svg"
+                width="16"
+                height="16"
+                alt="search"
+                class="header-search-icon"
               />
-            </label>
+              <label class="search-label">
+                <span class="visually-hidden">Поиск по сайту</span>
+                <input
+                  type="search"
+                  name="text"
+                  class="header-search-input"
+                  placeholder="Поиск по сайту"
+                />
+              </label>
+            </div>
             <button type="button" class="header-search-button">Найти</button>
           </div>
-          <div class="header-navigation-item">
-            <button type="button" class="header-login-button">
-              <img
-                src="images/login.svg"
-                width="13"
-                height="12"
-                alt="login"
-                class="header-login-icon"
-              />Войти
-            </button>
+          <div class="header-menu-container">
+            <div class="header-navigation-item header-items">
+              <button type="button" class="header-login-button">Войти</button>
+            </div>
+            <ul class="header-navigation-list reset-list">
+              <li class="header-compare-item header-items">
+                <button type="button" class="header-compare-button">
+                  Сравнить
+                </button>
+              </li>
+              <li class="header-cart-item header-items">
+                <button type="button" class="header-cart-button">
+                  Корзина
+                </button>
+              </li>
+            </ul>
+            <div class="header-cart-popover">
+              <div class="popover-item">
+                <img
+                  src="images/popover-1.svg"
+                  alt="Любительская селфи-палка"
+                  width="39"
+                  height="43"
+                />
+                <p class="popover-name">Любительская<br />селфи-палка</p>
+                <button class="popover-close-item"></button>
+              </div>
+              <div class="popover-item">
+                <img
+                  src="images/popover-2.svg"
+                  alt="Профессиональная селфи-палка"
+                  width="39"
+                  height="43"
+                />
+                <p class="popover-name">Профессиональная<br />селфи-палка</p>
+                <button class="popover-close-item"></button>
+              </div>
+              <div class="popover-info">
+                <p>Товаров: 2</p>
+                <p>Сумма: 2000 ₽</p>
+              </div>
+              <button class="popover-button">Открыть корзину</button>
+            </div>
           </div>
-          <ul class="header-navigation-list reset-list">
-            <li class="header-compare-item">
-              <img
-                src="images/compare.svg"
-                width="10"
-                height="12"
-                alt="compare"
-                class="header-compare-icon"
-              />
-              <button type="button" class="header-compare-button">
-                Сравнить
-              </button>
-            </li>
-            <li class="header-cart-item">
-              <img
-                src="images/cart.svg"
-                width="31"
-                height="22"
-                alt="cart"
-                class="header-cart-icon"
-              />
-              <button type="button" class="header-cart-button">Корзина</button>
-            </li>
-          </ul>
         </div>
         <div class="header-bottom-menu">
           <div class="header-catalog-item">
             <a class="header-catalog-link link" href="catalog.html"
               >Каталог товаров</a
             >
-            <button class="header-sub-catalog-button">
-              <img
-                src="images/plus.svg"
-                width="50"
-                height="50"
-                alt="plus"
-                class="header-plus-icon"
-              />
-            </button>
+            <button
+              class="header-sub-catalog-button header-sub-catalog-button-open"
+            ></button>
+            <button
+              class="header-sub-catalog-button header-sub-catalog-button-close visually-hidden"
+            ></button>
             <ul class="header-sub-catalog-list visually-hidden reset-list">
               <li class="header-sub-catalog-item">
                 <a class="link" href="#">Виртуальная реальность</a>
@@ -108,13 +116,13 @@
             </ul>
           </div>
           <ul class="header-catalog-list reset-list">
-            <li class="header-delivery-item">
+            <li class="header-delivery-item header-liste header-list-active">
               <a class="header-delivery-link link" href="#">Доставка</a>
             </li>
-            <li class="header-guarantee-item">
+            <li class="header-guarantee-item header-liste">
               <a class="header-guarantee-link link" href="#">Гарантия</a>
             </li>
-            <li class="header-contacts-item">
+            <li class="header-contacts-item header-liste">
               <a class="header-contacts-link link" href="#">Контакты</a>
             </li>
           </ul>
@@ -174,14 +182,126 @@
           </div>
         </div>
       </section>
-      <div class="container">
-        <img
-          src="images/indicators.svg"
-          alt="indicators"
-          width="76"
-          height="12"
-          class="indicators-list"
-        />
+      <div class="container indicators-list">
+        <span class="indicator indicator__active"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+      </div>
+      <!-- section 2 -->
+      <section class="slider container visually-hidden">
+        <div class="slider-images">
+          <img
+            class="slider-image"
+            src="images/slider-2.png"
+            alt="Фото товаров"
+            width="560"
+            height="560"
+          />
+          <div class="slider-button">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдушее фото</span>
+              <img
+                src="images/prev.svg"
+                width="20"
+                height="60"
+                alt="prev"
+                class="slider-prev"
+              />
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следуюшее фото</span>
+              <img
+                src="images/next.svg"
+                width="20"
+                height="60"
+                alt="next"
+                class="slider-next"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="slider-info">
+          <span class="slider-info-number">02</span>
+          <h2 class="image-info">Худеем правильно!</h2>
+          <p class="image-description">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+            занятия и соблюдать диету.
+          </p>
+          <h3 class="more-info">Подробнее</h3>
+          <div class="time-wrapper">
+            <div class="time-48h">
+              48 часов
+              <p class="without-recharging">Без подзарядки</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container indicators-list visually-hidden">
+        <span class="indicator"></span>
+        <span class="indicator indicator__active"></span>
+        <span class="indicator"></span>
+      </div>
+      <!-- section 3 -->
+      <section class="slider container visually-hidden">
+        <div class="slider-images">
+          <img
+            class="slider-image"
+            src="images/slider-3.png"
+            alt="Фото товаров"
+            width="560"
+            height="560"
+          />
+          <div class="slider-button">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдушее фото</span>
+              <img
+                src="images/prev.svg"
+                width="20"
+                height="60"
+                alt="prev"
+                class="slider-prev"
+              />
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следуюшее фото</span>
+              <img
+                src="images/next.svg"
+                width="20"
+                height="60"
+                alt="next"
+                class="slider-next"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="slider-info">
+          <span class="slider-info-number">03</span>
+          <h2 class="image-info">Делай селфи, как Бен Стиллер!</h2>
+          <p class="image-description">
+            Самая длинная палка для селфи доступна в нашем магазине. Восемь
+            (Восемь, Карл!) метров длиной и весом всего 5 кг.
+          </p>
+          <h3 class="more-info">Подробнее</h3>
+          <div class="more-info-wrapper">
+            <div class="more-info-8,5m">
+              8,5 м
+              <p class="lenght-8,5m">Длина палки</p>
+            </div>
+            <div class="more-info-5kg">
+              5 кг
+              <p class="weight-5kg">Вес палки</p>
+            </div>
+            <div class="more-info-material">
+              Карбон
+              <p class="material">Материал</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container indicators-list visually-hidden">
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator indicator__active"></span>
       </div>
       <ul class="catalog-list reset-list container">
         <li class="catalog-item">
@@ -257,16 +377,19 @@
           <a class="catalog-name link" href="#">Квадрокоптеры</a>
         </li>
       </ul>
+
+      <!-- Delivery -->
+
       <div class="info-section-wrapper">
         <section class="info-section container">
           <ul class="info-list reset-list">
             <li class="info-item info-item-active">
               <a class="info-link info-link-active link" href="#">Доставка</a>
             </li>
-            <li class="info-item">
+            <li class="info-item info-item-no-active">
               <a class="info-link link" href="#">Гарантия</a>
             </li>
-            <li class="info-item">
+            <li class="info-item info-item-no-active">
               <a class="info-link link" href="#">Кредит</a>
             </li>
           </ul>
@@ -289,6 +412,72 @@
           </div>
         </section>
       </div>
+      <!-- guarantee -->
+      <div class="info-section-wrapper guarantee">
+        <section class="info-section container">
+          <ul class="info-list reset-list">
+            <li class="info-item info-item-no-active">
+              <a class="info-link link" href="#">Доставка</a>
+            </li>
+            <li class="info-item info-item-active">
+              <a class="info-link info-link-active link" href="#">Гарантия</a>
+            </li>
+            <li class="info-item info-item-no-active">
+              <a class="info-link link" href="#">Кредит</a>
+            </li>
+          </ul>
+          <div class="description">
+            <div class="description-container">
+              <h2 class="description-name">Гарантия</h2>
+              <p class="description-text">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+              </p>
+            </div>
+            <img
+              class="description-image-guarantee"
+              src="images/guarantee.svg"
+              width="171"
+              height="195"
+              alt="гарантия"
+            />
+          </div>
+        </section>
+      </div>
+      <!--Credit -->
+      <div class="info-section-wrapper credit">
+        <section class="info-section container">
+          <ul class="info-list reset-list">
+            <li class="info-item info-item-no-active">
+              <a class="info-link link" href="#">Доставка</a>
+            </li>
+            <li class="info-item info-item-no-active">
+              <a class="info-link link" href="#">Гарантия</a>
+            </li>
+            <li class="info-item info-item-active">
+              <a class="info-link info-link-active link" href="#">Кредит</a>
+            </li>
+          </ul>
+          <div class="description">
+            <div class="description-container">
+              <h2 class="description-name">Кредит</h2>
+              <p class="description-text">
+                Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные условия кредита. Выгодные для
+                банка, разумеется.
+              </p>
+            </div>
+            <img
+              class="description-image-credit"
+              src="images/credit.svg"
+              width="156"
+              height="188"
+              alt="кредит"
+            />
+          </div>
+        </section>
+      </div>
+
       <div class="delivery container">
         <div class="delivery-auto">
           <img
@@ -300,7 +489,13 @@
           />
         </div>
         <h3 class="delivery-rare-product">Доставим редкий товар под заказ</h3>
-        <img src="images/group.svg" alt="info" width="40" height="40" class="info-icon" />
+        <img
+          src="images/group.svg"
+          alt="info"
+          width="40"
+          height="40"
+          class="info-icon"
+        />
       </div>
       <div class="about-contacts container">
         <section class="about">
@@ -313,7 +508,7 @@
             Мы можем доставить ваш товар в самые отдалённые уголки России
             транспортными компаниями:
           </p>
-          <ul class="about-list">
+          <ul class="about-list reset-list">
             <li class="about-item">Меловые линии</li>
             <li class="about-item">Сдик</li>
             <li class="about-item">ТоксБерри</li>
@@ -331,7 +526,7 @@
             <p class="contacts-address-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
-            <a class="contacts-phone" href="tel:+78128121212"
+            <a class="contacts-phone link" href="tel:+78128121212"
               >+7 812 812-12-12</a
             >
           </address>
@@ -340,7 +535,7 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="about-more link">Напишите нам</a>
+          <a class="about-more about-write link">Напишите нам</a>
         </section>
       </div>
       <section class="distribution-top">
@@ -355,7 +550,7 @@
           </div>
           <div class="distribution-bottom">
             <div class="distribution-input-wrapper">
-              <label>
+              <label class="distribution-input-label">
                 <input
                   class="distribution-email"
                   type="email"
@@ -454,5 +649,87 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <div class="modal-name-wrapper">
+            <h2 class="modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <form
+            class="auth-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="modal-email-wrapper">
+              <p class="field-group">
+                <label class="label" for="auth-name">Ваше имя:</label>
+                <input
+                  class="auth-form-field field-name"
+                  type="text"
+                  id="auth-name"
+                  name="auth-login"
+                  placeholder="Ваше имя"
+                />
+                <span class="name-info-text">Добавьте имя</span>
+              </p>
+              <p class="field-group">
+                <label class="label" for="auth-email">Ваш e-mail:</label>
+                <input
+                  class="auth-form-field field-email"
+                  type="email"
+                  id="auth-email"
+                  name="auth-email"
+                  placeholder="почта"
+                />
+                <span class="email-info-text">Забавный у вас адрес</span>
+              </p>
+            </div>
+            <div class="modal-input-wrapper">
+              <p class="field-group">
+                <label class="label" for="auth-text">Что нужно привезти:</label>
+                <input
+                  class="auth-form-field field-text"
+                  type="text"
+                  id="auth-text"
+                  name="auth-text"
+                  placeholder="В свободной форме"
+                />
+              </p>
+              <div>
+                <label class="label label-numbers" for="number"
+                  >Количество:
+                  <span class="info-icon">
+                    <span>i</span>
+                    <span class="info-modal">
+                      Постараемся найти, сколько нужно. Привезём сколько
+                      получится по требованиям <br />
+                      к провозу багажа.
+                    </span>
+                  </span>
+                </label>
+                <div class="number">
+                  <span class="minus">-</span>
+                  <input
+                    min="1"
+                    type="number"
+                    value="1"
+                    id="number"
+                    name="number"
+                    class="auth-form-field field-number"
+                  />
+                  <span class="plus">+</span>
+                </div>
+              </div>
+            </div>
+            <button class="button auth-form-button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
