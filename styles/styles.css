@@ -1025,12 +1025,12 @@ body {
   border-bottom: 3px solid #c4c4c4;
 }
 
-.distribution-input-label:focus {
-  background-color: #dcdcdc;
-}
-
 .distribution-input-label:has(.distribution-email:invalid) {
   border-color: red;
+}
+
+.distribution-input-label:focus {
+  background-color: #dcdcdc;
 }
 
 .distribution-email {
