@@ -4,17 +4,21 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header page-header-catalog container">
       <h1 class="visually-hidden">device</h1>
-      <img
-        class="logo-header"
-        src="images/logo.svg"
-        width="145"
-        height="36"
-        alt="Логотип Девайс"
-      />
+      <a href="index.html"
+        ><img
+          class="logo-header"
+          src="images/logo.svg"
+          width="145"
+          height="36"
+          alt="Логотип Девайс"
+        />
+      </a>
       <nav class="header-navigation">
         <div class="header-navigation-top">
           <div class="header-search-container">
@@ -75,26 +79,6 @@
                 class="header-plus-icon"
               />
             </button>
-            <ul class="header-sub-catalog-list visually-hidden reset-list">
-              <li class="header-sub-catalog-item">
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li class="header-sub-catalog-item">
-                <a href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="header-sub-catalog-item">
-                <a href="#">Экшн-камеры</a>
-              </li>
-              <li class="header-sub-catalog-item">
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="header-sub-catalog-item">
-                <a href="#">Умные часы</a>
-              </li>
-              <li class="header-sub-catalog-item">
-                <a href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
           </div>
           <ul class="header-catalog-list reset-list">
             <li class="header-delivery-item">
@@ -108,6 +92,26 @@
             </li>
           </ul>
         </div>
+        <ul class="header-sub-catalog-list container reset-list">
+          <li class="header-sub-catalog-item">
+            <a class="link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="header-sub-catalog-item">
+            <a class="link" href="#">Моноподы для cелфи</a>
+          </li>
+          <li class="header-sub-catalog-item header-sub-catalog-item-span">
+            <a class="link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="header-sub-catalog-item">
+            <a class="link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="header-sub-catalog-item">
+            <a class="link" href="#">Умные часы</a>
+          </li>
+          <li class="header-sub-catalog-item">
+            <a class="link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="catalog-html">
@@ -253,11 +257,11 @@
           </aside>
           <section class="product-cards-section">
             <div class="product-sorting">
-              <a class="sort-link link">сортировка:</a>
+              <a class="sort-link link">сортировка: </a>
               <a class="select-link link">Популярные</a>
               <div class="product-arrow">
+                <span class="arrow arrow-down"></span>
                 <span class="arrow arrow-up"></span>
-                <span class=" arrow arrow-down"></span>
               </div>
             </div>
             <ul class="products-list reset-list">
@@ -331,9 +335,9 @@
               <a class="load-more-link link">Загрузить ещё</a>
               <ul class="pagination reset-list">
                 <li class="pagination-item">
-                  <a class="pagination-link-back link" href="#">Назад</a>
+                  <a class="link pagination-link-back" href="#">Назад</a>
                 </li>
-                <li class="pagination-item">
+                <li class="pagination-item-number">
                   <ul class="numbers reset-list">
                     <li>
                       <a class="pagination-link-number one link" href="#">1</a>
@@ -364,13 +368,15 @@
     <footer class="page-footer">
       <div class="footer container">
         <h2 class="visually-hidden">device</h2>
-        <img
-          class="logo-footer"
-          src="images/logo1.svg"
-          width="145"
-          height="36"
-          alt="Логотип Девайс"
-        />
+        <a href="index.html">
+          <img
+            class="logo-footer"
+            src="images/logo1.svg"
+            width="145"
+            height="36"
+            alt="Логотип Девайс"
+          />
+        </a>
         <div class="footer-info">
           <p class="footer-address-text">
             Санкт-Петербург, набережная<br />
@@ -387,7 +393,9 @@
               <a class="footer-link link" href="#">Контакты</a>
             </li>
           </ul>
-          <a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+          <a class="footer-phone" href="tel:+78128121212"
+            >Тел.: +7 (812) 812-12-12</a
+          >
         </div>
         <div class="footer-social">
           <span class="footer-rectangle"></span>
@@ -432,14 +440,7 @@
               <span class="visually-hidden">Твиттер</span>
             </li>
           </ul>
-          <a class="htmlacademy-link link" href="https://htmlacademy.ru">
-            <img
-              src="images/html.svg"
-              width="115"
-              height="33"
-              alt=".html academy"
-            />
-          </a>
+          <a class="htmlacademy-link link" href="https://htmlacademy.ru"> </a>
         </div>
       </div>
     </footer>
