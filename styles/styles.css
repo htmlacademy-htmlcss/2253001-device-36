@@ -101,7 +101,7 @@ body {
 }
 
 .logo-header:focus {
-  border: 1px solid #af4fff;
+  outline: 1px solid #af4fff;
 }
 
 .header-navigation-top {
@@ -137,12 +137,12 @@ body {
 }
 
 .header-search-container:focus-within {
-  border: 1px solid #af4fff;
-  height: 46px;
+  outline: 1px solid #af4fff;
 }
 
 .header-input {
   border: 2px solid #000000;
+  border-right: none;
   height: 41px;
   border-radius: 50px 0 0 50px;
   flex: 1;
@@ -260,7 +260,6 @@ body {
   color: #ffffff;
   margin-bottom: 30px;
   padding: 2px;
-  border: 2px solid transparent;
 }
 
 .popover-item:hover {
@@ -272,7 +271,7 @@ body {
 }
 
 .popover-item:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .popover-name {
@@ -328,7 +327,6 @@ body {
   width: 100%;
   text-transform: uppercase;
   color: #000000;
-  border: 2px solid transparent;
 }
 
 .popover-button:hover {
@@ -341,7 +339,7 @@ body {
 }
 
 .popover-button:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .popover-button:disabled {
@@ -357,7 +355,7 @@ body {
 }
 
 .header-items:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .header-exit-login-item {
@@ -397,10 +395,6 @@ body {
   width: 100%;
 }
 
-.header-liste {
-  border: 2px solid transparent;
-}
-
 .header-liste:hover {
   opacity: 0.6;
 }
@@ -410,7 +404,7 @@ body {
 }
 
 .header-liste:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .header-list-active {
@@ -428,7 +422,7 @@ body {
 }
 
 .header-list-active:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .header-catalog-item {
@@ -476,7 +470,7 @@ body {
 }
 
 .header-catalog-item:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .header-sub-catalog-list {
@@ -538,7 +532,7 @@ body {
 }
 
 .slider-prev:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .slider-next {
@@ -557,7 +551,7 @@ body {
 }
 
 .slider-next:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .indicators-list {
@@ -639,7 +633,6 @@ body {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid transparent;
 }
 
 .more-info::before {
@@ -771,7 +764,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
-  border: 2px solid transparent;
 }
 
 .range-input {
@@ -786,7 +778,7 @@ body {
 }
 
 .catalog-filter-label:has(.range-input:focus) {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .range-input-max {
@@ -812,7 +804,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 160px;
-  border: 2px solid transparent;
 }
 
 .catalog-item:hover .catalog-image-wrapper {
@@ -824,7 +815,7 @@ body {
 }
 
 .catalog-item:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .catalog-image-wrapper {
@@ -966,7 +957,6 @@ body {
   align-items: center;
   background: #f0f0f0;
   margin-top: 70px;
-  border: 2px solid transparent;
 }
 
 .delivery-auto {
@@ -991,7 +981,7 @@ body {
 }
 
 .delivery:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .delivery-rare-product {
@@ -1200,7 +1190,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid #af4fff;
+  outline: 1px solid #af4fff;
   left: 0;
 }
 
@@ -1271,7 +1261,6 @@ body {
   margin-bottom: 20px;
   width: 151px;
   height: 42px;
-  border: 1px solid transparent;
 }
 
 .logo-footer:hover {
@@ -1283,7 +1272,7 @@ body {
 }
 
 .logo-footer:focus {
-  border: 1px solid #af4fff;
+  outline: 1px solid #af4fff;
 }
 
 .footer-info {
@@ -1311,7 +1300,7 @@ body {
 }
 
 .footer-link:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .footer-rectangle {
@@ -1378,7 +1367,7 @@ body {
 }
 
 .htmlacademy-link:focus {
-  border: 1px solid #af4fff;
+  outline: 1px solid #af4fff;
   width: 117px;
   height: 37px;
 }
@@ -1394,7 +1383,6 @@ body {
 
 .footer-phone {
   width: 177px;
-  border: 2px solid transparent;
   margin-top: 5px;
 }
 
@@ -1410,7 +1398,7 @@ body {
 .footer-phone:focus {
   width: 177px;
   height: 24px;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .footer-link {
@@ -1499,7 +1487,7 @@ body {
 
 .modal-close-button:focus,
 .modal-close-button:focus {
-  border: 1px solid #af4fff;
+  outline: 1px solid #af4fff;
 }
 
 .modal-title {
@@ -1605,7 +1593,7 @@ body {
 }
 
 .auth-form-field:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .name-info-text {
@@ -1678,7 +1666,7 @@ body {
 }
 
 .auth-form-button:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 0;
@@ -1725,7 +1713,6 @@ body {
 .select-link {
   position: relative;
   padding-right: 49px;
-  border: 2px solid transparent;
 }
 
 .select-link::before {
@@ -1749,7 +1736,7 @@ body {
 }
 
 .select-link:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .arrow {
@@ -1776,7 +1763,7 @@ body {
   content: "";
   width: 34px;
   height: 34px;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   top: -22px;
   left: -17px;
 }
@@ -1820,7 +1807,6 @@ body {
 
 .product-card {
   position: relative;
-  border: 2px solid transparent;
 }
 
 .product-card:hover .product-card-image {
@@ -1852,7 +1838,7 @@ body {
 }
 
 .product-card:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .product-card-description {
@@ -1944,7 +1930,6 @@ body {
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
-  border: 2px solid transparent;
 }
 
 .breadcrumbs-link:active {
@@ -1956,7 +1941,7 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .product-filter-list {
@@ -2062,7 +2047,7 @@ body {
   content: "";
   width: 24px;
   height: 24px;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .control-input:disabled + .control-mark {
@@ -2129,7 +2114,7 @@ body {
   width: 100%;
   height: 100%;
   top: -1px;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   opacity: 0.3;
 }
 
@@ -2185,11 +2170,7 @@ body {
   height: 44px;
   top: -14px;
   left: -17px;
-  border: 2px solid #af4fff;
-}
-
-.pagination-item {
-  border: 2px solid transparent;
+  outline: 2px solid #af4fff;
 }
 
 .pagination-item:hover {
@@ -2202,7 +2183,7 @@ body {
 }
 
 .pagination-item:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .one {
